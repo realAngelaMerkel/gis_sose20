@@ -10,14 +10,14 @@ nav {
     border-radius: 2px;
     width: 230px;
     color: white;
-    background-color: limegreen;
+    background-color: green;
 }
 nav a{
     margin-top: 0px;
     margin: 4px;
     text-decoration: none;
     color: white;
-    background-color: limegreen;
+    background-color: green;
 }
 
 #hier{
@@ -25,7 +25,7 @@ nav a{
 }
 
 nav a:hover{
-    color: green;
+    color: limegreen;
 }
 
 .halbkreis{
