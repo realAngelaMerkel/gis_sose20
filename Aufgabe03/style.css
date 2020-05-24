@@ -109,7 +109,8 @@ nav a:hover{
 .kontakt{
     width: 215px;
     height: 270px;
-    margin-left: 150px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px;
     border: 5px;
 }
