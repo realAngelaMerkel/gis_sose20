@@ -5,7 +5,6 @@ html{
 div>img{
     height: 200px;
     width: 200px;
-    border-style: double;
     border-color:black;
 }
 .Preis{
