@@ -7,7 +7,7 @@ export interface Product {
     preis: string;
 }
 //Artikel Koks
-export let cokaProducts: Array<Product> = [
+export let koksProducts: Array<Product> = [
     {
         img: "K1.jpg", 
         name: "Koks", 
@@ -47,7 +47,7 @@ export let cokaProducts: Array<Product> = [
 ];
 
 //Artikel Nutten
-export let kahiProducts: Array<Product> = [ 
+export let nuttenProducts: Array<Product> = [ 
     { img: "N1.jpg", name: "Natasha, 26", description: "20 Jahre Erfahrung", preis: "100€" },
     { img: "N2.jpg", name: "Natalia, 26", description: "18 Jahre Erfahrung", preis: "150€" },
     { img: "N3.jpg", name: "Gerda, 44", description: "A.k.a.: Tornardozunge", preis: "200€" },
