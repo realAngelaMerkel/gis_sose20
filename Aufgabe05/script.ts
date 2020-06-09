@@ -10,14 +10,6 @@ interface Product {
 
 let product: Product[] = [];
 
-function addProduct(p: Product): void {
-
-    product.push(p);
-
-
-}
-
-//Product
 //Koks
 addProduct({
     type: "koks", name: "Koks", logo: "K1.jpg", alt: "Koks", desc: "Heizt dir das Gefühl aus dem Gesicht", price: "100€"
@@ -74,35 +66,30 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         if (i.type == "koks") {
 
-            var div = document.createElement("div");
+            let div: HTMLElement = document.createElement("div");
             div.setAttribute("id", "koks" + countKoks);
-            document.getElementById("koks").appendChild(div);
 
-            var img = document.createElement("img");
+            let img: HTMLElement = document.createElement("img");
             img.setAttribute("src", i.logo);
             img.setAttribute("alt", i.alt);
-            document.getElementById("koks" + countKoks).appendChild(img);
+            div.appendChild(img);
 
-            var h2 = document.createElement("h2");
-            var h2text = document.createTextNode(i.name);
+            let h2: HTMLElement = document.createElement("h2");
+            let h2text = document.createTextNode(i.name);
             h2.appendChild(h2text);
-            document.getElementById("koks" + countKoks).appendChild(h2);
 
-            var p = document.createElement("p");
-            var ptext = document.createTextNode(i.desc);
+            let p: HTMLElement = document.createElement("p");
+            let ptext = document.createTextNode(i.desc);
             p.appendChild(ptext);
-            document.getElementById("koks" + countKoks).appendChild(p);
 
-            var p2 = document.createElement("p");
+            let p2: HTMLElement = document.createElement("p");
             p2.setAttribute("class", "Preis");
-            var p2text = document.createTextNode(i.price);
+            let p2text = document.createTextNode(i.price);
             p2.appendChild(p2text);
-            document.getElementById("koks" + countKoks).appendChild(p2);
 
-            var input = document.createElement("input");
+            let input: HTMLElement = document.createElement("input");
             input.setAttribute("type", "submit");
             input.setAttribute("value", "In den Warenkorb");
-            document.getElementById("koks" + countKoks).appendChild(input);
 
 
         }
@@ -115,48 +102,31 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         if (i.type == "nutte") {
 
-            var div = document.createElement("div");
+            let div: HTMLElement = document.createElement("div");
             div.setAttribute("id", "nutten" + countNutten);
-            document.getElementById("nutten").appendChild(div);
 
-            var img = document.createElement("img");
+            let img: HTMLElement = document.createElement("img");
             img.setAttribute("src", i.logo);
             img.setAttribute("alt", i.alt);
-            document.getElementById("nutten" + countNutten).appendChild(img);
 
-            var h2 = document.createElement("h2");
-            var h2text = document.createTextNode(i.name);
+            let h2: HTMLElement = document.createElement("h2");
+            let h2text = document.createTextNode(i.name);
             h2.appendChild(h2text);
-            document.getElementById("nutten" + countNutten).appendChild(h2);
 
-            var p = document.createElement("p");
+            let p: HTMLElement = document.createElement("p");
             var ptext = document.createTextNode(i.desc);
             p.appendChild(ptext);
-            document.getElementById("nutten" + countNutten).appendChild(p);
 
-            var p2 = document.createElement("p");
+            let p2: HTMLElement = document.createElement("p");
             p2.setAttribute("class", "Preis");
             var p2text = document.createTextNode(i.price);
             p2.appendChild(p2text);
-            document.getElementById("nutten" + countNutten).appendChild(p2);
 
-            var input = document.createElement("input");
+            let input: HTMLElement = document.createElement("input");
             input.setAttribute("type", "submit");
             input.setAttribute("value", "In die Kiste");
-            document.getElementById("nutten" + countNutten).appendChild(input);
-
-
         }
-
-
-
-
-
+   
     }
 
-
-
-
-
-
-}
+});
