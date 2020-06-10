@@ -44,9 +44,8 @@ function sortKoks(e) {
     var showDiv = document.getElementById("koks");
     hideDiv.style.visibility = "hidden";
     hideDiv.style.display = "none";
-
     showDiv.style.visibility = "visible";
-    showDiv.style.display = "block";
+    showDiv.style.display = "flex";
 
 }
 
@@ -57,7 +56,7 @@ function sortNutten(e) {
     hideDiv.style.visibility = "hidden";
     hideDiv.style.display = "none";
     showDiv.style.visibility = "visible";
-    showDiv.style.display = "block";
+    showDiv.style.display = "flex";
 
 }
 
