@@ -1,22 +1,8 @@
-interface Product {
-    type: string; // Artikeltyp
-    name: string; // Artikelname
-    logo: string; // Bildname (Mit File Extension)
-    alt: string; // Alt. Bilname
-    desc: string;  //Artikelbeschreibung
-    price: string; //Artikelpreis
-
-}
-
-let products: Product[] = [];
-
-function addProduct(p: Product): void {
-
+"use strict";
+let products = [];
+function addProduct(p) {
     products.push(p);
-
-
 }
-
 //Products
 //Koks
 addProduct({
@@ -37,7 +23,6 @@ addProduct({
 addProduct({
     type: "koks", name: "Koks", logo: "K6.jpg", alt: "Koks", desc: "Baba Shishakoks, vallah", price: "10€"
 });
-
 //Nutten
 addProduct({
     type: "nutte", name: "Natasha, 26", logo: "N1.jpg", alt: "Natasha", desc: "20 Jahre Erfahrung", price: "100€"
@@ -57,106 +42,65 @@ addProduct({
 addProduct({
     type: "nutte", name: "Mrs.Philips, 66", logo: "N6.jpg", alt: "Mrs.Philips", desc: "Das beste, was Trevor Philips Enterprises zu bieten hat.", price: "1.000.000€"
 });
-
-
-
-
-
-
 // Sobald die HTML Page geladen hat:
 document.addEventListener("DOMContentLoaded", function (event) {
     var countKoks = 0;
     var countNutten = 0;
-
     for (let i of products) {
-
         countKoks++;
-
         if (i.type == "koks") {
-
             var div = document.createElement("div");
             div.setAttribute("id", "koks" + countKoks);
             document.getElementById("koks").appendChild(div);
-
             var img = document.createElement("img");
             img.setAttribute("src", i.logo);
             img.setAttribute("alt", i.alt);
             document.getElementById("koks" + countKoks).appendChild(img);
-
             var h2 = document.createElement("h2");
             var h2text = document.createTextNode(i.name);
             h2.appendChild(h2text);
             document.getElementById("koks" + countKoks).appendChild(h2);
-
             var p = document.createElement("p");
             var ptext = document.createTextNode(i.desc);
             p.appendChild(ptext);
             document.getElementById("koks" + countKoks).appendChild(p);
-
             var p2 = document.createElement("p");
             p2.setAttribute("class", "Preis");
             var p2text = document.createTextNode(i.price);
             p2.appendChild(p2text);
             document.getElementById("koks" + countKoks).appendChild(p2);
-
             var input = document.createElement("input");
             input.setAttribute("type", "submit");
             input.setAttribute("value", "In den Warenkorb");
             document.getElementById("koks" + countKoks).appendChild(input);
-
-
         }
-
-    
-
-
-
         countNutten++;
-
         if (i.type == "nutte") {
-
             var div = document.createElement("div");
             div.setAttribute("id", "nutten" + countNutten);
             document.getElementById("nutten").appendChild(div);
-
             var img = document.createElement("img");
             img.setAttribute("src", i.logo);
             img.setAttribute("alt", i.alt);
             document.getElementById("nutten" + countNutten).appendChild(img);
-
             var h2 = document.createElement("h2");
             var h2text = document.createTextNode(i.name);
             h2.appendChild(h2text);
             document.getElementById("nutten" + countNutten).appendChild(h2);
-
             var p = document.createElement("p");
             var ptext = document.createTextNode(i.desc);
             p.appendChild(ptext);
             document.getElementById("nutten" + countNutten).appendChild(p);
-
             var p2 = document.createElement("p");
             p2.setAttribute("class", "Preis");
             var p2text = document.createTextNode(i.price);
             p2.appendChild(p2text);
             document.getElementById("nutten" + countNutten).appendChild(p2);
-
             var input = document.createElement("input");
             input.setAttribute("type", "submit");
             input.setAttribute("value", "In die Kiste");
             document.getElementById("nutten" + countNutten).appendChild(input);
-
-
         }
-
-
-
-
-
     }
-
-
-
-
-
-
-}
+});
+//# sourceMappingURL=script.js.map
