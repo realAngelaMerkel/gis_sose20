@@ -5,7 +5,7 @@ var A08Server;
     submit.addEventListener("click", server);
     async function server() {
         let formData = new FormData(document.forms[0]);
-        let url = "https://angiegissose2020.herokuapp.com";
+        let url = "https://angiegissise2020.herokuapp.com";
         let query = new URLSearchParams(formData);
         url = url + "?" + query.toString();
         await fetch(url);
