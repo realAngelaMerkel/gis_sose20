@@ -20,7 +20,7 @@ function sortKoks(e) {
     hideDiv.style.visibility = "hidden";
     hideDiv.style.display = "none";
     showDiv.style.visibility = "visible";
-    showDiv.style.display = "block";
+    showDiv.style.display = "flex";
 }
 function sortNutten(e) {
     var hideDiv = document.getElementById("koks");
@@ -28,7 +28,7 @@ function sortNutten(e) {
     hideDiv.style.visibility = "hidden";
     hideDiv.style.display = "none";
     showDiv.style.visibility = "visible";
-    showDiv.style.display = "block";
+    showDiv.style.display = "flex";
 }
 //Products
 //Koks

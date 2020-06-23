@@ -7,13 +7,15 @@ namespace Aufgabe07 {
         category: number;
     }
 
-    export let artikel: Artikel[];
-    loadArtikel("data.json");
+    export let produkte: Artikel[];
+    loadArtikel("./data.json");
+
 
     async function loadArtikel(_url: RequestInfo): Promise<void> {
         let response: Response = await fetch(_url);
         let jsonArray: JSON = await response.json();
-        artikel = await JSON.parse(JSON.stringify(jsonArray));
+        produkte = await JSON.parse(JSON.stringify(jsonArray));
         createArtikel();
     }
+
 }
