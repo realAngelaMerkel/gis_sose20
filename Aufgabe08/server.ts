@@ -35,7 +35,7 @@ export namespace A08Server {
 
         //schreibt die request url 
         _response.write(_request.url);
-
+        console.log(_request.url);
         //Beendet die Request
         _response.end();
     }
