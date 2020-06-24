@@ -4,63 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
     <link rel="stylesheet" href="style.css">
-    <script src="warenkorb.js"></script>
-
+    <script src="script.js" defer></script>
+    <script src="warenkorb.js" defer></script>
+    <title>Shop</title>
 </head>
-<header>
-    <nav>
-        <h1>Koks & Nutten</h1>
-        <br>
-        <div class="Logo">
-            <img src="logo.png" alt="Logo">
-        </div>
-
-        <div class="Warenkorb">
-            <a href="warenkorb.html"> <img src="warenkorb.jpg" alt="Warenkorb"></a>
-            <p id="nop">Empty</p>
-        </div>
-    </nav>
-</header>
 
 <body>
+    <div class="box-area">
+        <header>
+            <div class="wrapper">
+                <nav>
+                    <a href="index.html">Back to Shop</a>
+                    <div id="warencounter"></div>
 
 
-    <div class="content">
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="content-area">
+                <h2>Warenkorb:</h2>
+                <div id="flexWarenkorb" class="products"></div>
+            </div>
+            <nav> <a id="warenkorbWert"></a>
+                <a id="delButton">Delete All</a></nav>
 
-        <div class="head">
-            <h1>
-                <em>Warenkorb </em> </h1>
-        </div>
-
-        <a id="cartProdukte"></a>
-
-        <h2> Gesamtsumme:</h2>
-        <p id="gesamtsumme"></a>
-            <a id="remove_all" href=""><em>Alle Artikel aus dem Warenkorb
-                    entfernen</em></a>
-            <form action="#">
-                <input type="submit" class="button" value="Zur Kasse" />
-            </form>
-            <br>
-
-
-
+        </main>
     </div>
-
-
 </body>
-
-<script>
-    document.getElementById("remove_all").addEventListener("click", removeAll);
-
-
-    function removeAll() {
-
-        localStorage.clear();
-
-    }
-</script>
 
 </html>
