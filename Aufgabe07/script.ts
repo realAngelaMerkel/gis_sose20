@@ -16,7 +16,7 @@ namespace Aufgabe07 {
     cartDiv.id = "cart_count";
     let count: number = 0;
 
-    let cartProdukte: Produkt[] = [];
+    let cartProdukte: Product[] = [];
 
     export function addtoCart(_event: Event): void {
 
