@@ -24,7 +24,7 @@ namespace Aufgabe07 {
             document.getElementById("cart_count") ?.appendChild(cartDiv);
         }
 
-        produktCounter += 1;
+        produktCounter += 0;
         cartDiv.innerHTML = produktCounter + "";
 
         artikelSumme += parseInt((<HTMLElement>_event.currentTarget) ?.getAttribute("preis")!);
