@@ -6,7 +6,7 @@ var A08Server;
 (function (A08Server) {
     //Konsolen Ausgabe
     console.log("Starting server");
-    //Vaiablen definition port mit dem Processes Port 
+    //Vaiablen definition port mit dem Process Port 
     let port = Number(process.env.PORT);
     //Überprüft den Wert des Port, wenn Port keinen Wert hat wird ein standard Port zugewiesen
     if (!port)
