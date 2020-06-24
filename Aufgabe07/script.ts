@@ -88,7 +88,7 @@ namespace Aufgabe07 {
         for (let i of produkte) {
 
 
-            countKoks++;
+
 
             if (i.category == "1") {
 
@@ -135,13 +135,16 @@ namespace Aufgabe07 {
 
             }
 
-            countNutten++;
+
+
 
             if (i.category == "2") {
 
 
                 var div = document.createElement("div");
                 div.setAttribute("id", "nutten" + countNutten);
+                div.setAttribute("index", countNutten);
+
                 document.getElementById("nutten").appendChild(div);
 
                 var img = document.createElement("img");
@@ -176,6 +179,8 @@ namespace Aufgabe07 {
 
             }
 
+
+
             var koksButton = document.getElementById("sortKoks");
             koksButton.addEventListener("click", sortKoks);
 
@@ -184,7 +189,8 @@ namespace Aufgabe07 {
 
 
 
-
+            countNutten++;
+            countKoks++;
 
 
 
